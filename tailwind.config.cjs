@@ -19,6 +19,10 @@ module.exports = {
       dropShadow: {
         'custom-large':'7px 7px 6px rgba(0, 0, 0, 0.25)',
         'custom-small':'0px 4px 4px rgba(0, 0, 0, 0.25)',
+      },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+        'robotoCondensed': ['Roboto Condensed', 'sans-serif']
       }
     },
   },
