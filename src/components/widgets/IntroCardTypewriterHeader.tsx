@@ -17,7 +17,7 @@ const IntroCardTypewriterHeader = () => {
           ],
           delay: "natural",
           deleteSpeed: "natural",
-          pauseFor: 2000,
+          // pauseFor: 2000,
           autoStart: true,
           loop: true,
         }}
