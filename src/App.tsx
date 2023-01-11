@@ -3,9 +3,9 @@ import LandingPage from "./components/LandingPage"
 function App() {
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <LandingPage />
-      <div className="w-screen h-screen bg-pink-500"></div>
+      <div className="h-screen bg-pink-500"></div>
     </div>
   )
 }
