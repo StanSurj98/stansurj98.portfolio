@@ -3,17 +3,17 @@ import TypewriterComponent from "typewriter-effect";
 
 const IntroCardTypewriterHeader = () => {
   return (
-    <span className="font-mono text-2xl font-medium mx-8 mb-8">
+    <span className="mb-8 font-mono text-3xl font-medium md:text-4xl">
       <TypewriterComponent
         options={{
           strings: [
-            "Coffeeholic",
-            "Developer",
-            "Creative",
-            "Problem Solver",
-            "Nature Lover",
-            "Dependable",
-            "Traveller",
+            "Coffeeholic.",
+            "Developer.",
+            "Creative.",
+            "Problem Solver.",
+            "Nature Lover.",
+            "Dependable.",
+            "Traveller.",
           ],
           delay: "natural",
           deleteSpeed: "natural",
