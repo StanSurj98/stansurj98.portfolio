@@ -2,6 +2,13 @@ import React from "react";
 import AboutBlurb from "./widgets/AboutBlurb";
 import IntroCardTypewriterHeader from "./widgets/IntroCardTypewriterHeader";
 import Nameplate from "./widgets/Nameplate";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
 
 const IntroCard = () => {
   return (
@@ -13,6 +20,16 @@ const IntroCard = () => {
         <Nameplate />
         <IntroCardTypewriterHeader />
         <AboutBlurb />
+        {/* Below is examples of using the fontawesome icons in span wrappers */}
+        <span className="flex aspect-square h-10 items-center justify-center overflow-hidden rounded-full bg-white drop-shadow-custom-small">
+          <FontAwesomeIcon icon={faFile} size={"xl"} fixedWidth />
+        </span>
+        <span className="flex aspect-square h-10 items-center justify-center overflow-hidden rounded-full bg-white drop-shadow-custom-small">
+          <FontAwesomeIcon icon={faEnvelope} size={"xl"} fixedWidth />
+        </span>
+        <FontAwesomeIcon icon={faGithub} size={"xl"} fixedWidth />
+        <FontAwesomeIcon icon={faLinkedin} size={"xl"} fixedWidth />
+        <FontAwesomeIcon icon={faMedium} size={"xl"} fixedWidth />
       </div>
     </div>
   );
