@@ -1,12 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const Nameplate = () => {
   return (
-    <div className='flex flex-col my-8 mx-8'>
-      <h1 className='text-3xl md:text-5xl font-robotoCondensed font-bold'>STANLEY</h1>
-      <h1 className='text-3xl md:text-5xl font-robotoCondensed font-light'>SURJANTO.</h1>
+    <div className="my-8 flex flex-col">
+      <h1 className="font-robotoCondensed text-4xl font-bold md:text-5xl">
+        STANLEY
+      </h1>
+      <h1 className="font-robotoCondensed text-4xl font-light md:text-5xl">
+        SURJANTO.
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-export default Nameplate
+export default Nameplate;
