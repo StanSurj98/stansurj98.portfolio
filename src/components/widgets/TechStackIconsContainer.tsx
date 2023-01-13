@@ -6,6 +6,8 @@ import {
   FaNode,
   FaPython,
 } from "react-icons/fa";
+import { SiPostgresql, SiExpress, SiTailwindcss, SiDocker } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { IconContext } from "react-icons";
 
 const TechStackIconsContainer = () => {
@@ -15,14 +17,19 @@ const TechStackIconsContainer = () => {
     <FaHtml5 />,
     <FaCss3Alt />,
     <FaNode />,
+    <SiExpress />,
+    <SiTailwindcss />,
+    <SiPostgresql />,
+    <TbBrandNextjs />,
     <FaPython />,
+    <SiDocker />,
   ];
-  const techIconItems = techIconList.map((icon, index) => {
+  const techIconItems = techIconList.map((icon) => {
     return icon;
   });
 
   return (
-    <div className="max-w-4/5 mt-4 flex flex-wrap items-center justify-center">
+    <div className="2xl:w-2/4 mt-4 flex flex-wrap items-center justify-center">
       <IconContext.Provider
         value={{
           className:
