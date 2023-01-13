@@ -4,9 +4,9 @@ type Props = {
 
 const NavbarTextButtons = ({ title }: Props) => {
   return (
-    <button className="ml-6 font-robotoCondensed text-xl font-light text-rich-black hover:scale-105">
+    <a className="ml-6 cursor-pointer font-robotoCondensed text-xl font-light text-rich-black duration-200 ease-out hover:scale-105 hover:ease-in-out">
       {title}
-    </button>
+    </a>
   );
 };
 
