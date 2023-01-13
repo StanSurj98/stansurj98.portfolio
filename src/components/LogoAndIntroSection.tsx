@@ -3,6 +3,7 @@ import AboutBlurb from "./widgets/AboutBlurb";
 import ButtonMain from "./widgets/ButtonMain";
 import IntroCardTypewriterHeader from "./widgets/IntroCardTypewriterHeader";
 import Nameplate from "./widgets/Nameplate";
+import '../index.css'
 
 const LogoAndIntroSection = () => {
   return (
@@ -10,7 +11,7 @@ const LogoAndIntroSection = () => {
       {/* Only visible on medium+ screens */}
       <SmallNavbar />
       <Nameplate />
-      <h1 className="my-2 font-robotoCondensed text-xl font-bold text-azure lg:mb-4 lg:text-2xl 2xl:mb-6">
+      <h1 className="fontSize-smallHeader my-2 text-azure lg:mb-4 2xl:mb-6">
         ABOUT
       </h1>
       <IntroCardTypewriterHeader />

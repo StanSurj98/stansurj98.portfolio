@@ -20,18 +20,16 @@ const SmallNavbar = () => {
       </div>
       <div className="flex items-center">
         {navChildren}
-        <div className="ml-2 flex">
+        <div className="ml-4 flex">
           <FontAwesomeIcon
-            className="ml-4 h-full cursor-pointer duration-200 ease-out hover:scale-110 hover:ease-out"
+            className="ml-2 text-2xl cursor-pointer duration-200 ease-out hover:scale-110 hover:ease-out hover:text-azure"
             icon={faGithub}
             // size={"xl"}
-            fixedWidth
           />
           <FontAwesomeIcon
-            className="ml-4 h-full cursor-pointer duration-200 ease-out hover:scale-110 hover:ease-out"
+            className="ml-2 text-2xl cursor-pointer duration-200 ease-out hover:scale-110 hover:ease-out hover:text-azure"
             icon={faLinkedin}
             // size={"xl"}
-            fixedWidth
           />
         </div>
       </div>
