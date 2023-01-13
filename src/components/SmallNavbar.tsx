@@ -5,8 +5,8 @@ import Logo from "../assets/ss_logo_nobg2.png";
 
 const SmallNavbar = () => {
   const navCategories = ["Resumé", "Work", "Contact"];
-  const navChildren = navCategories.map((title) => {
-    return <NavbarTextButtons title={title} />;
+  const navChildren = navCategories.map((title, index) => {
+    return <NavbarTextButtons title={title} key={index} />;
   });
 
   return (
