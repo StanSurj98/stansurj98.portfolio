@@ -3,7 +3,7 @@ import TypewriterComponent from "typewriter-effect";
 
 const IntroCardTypewriterHeader = () => {
   return (
-    <span className="mb-4 lg:mb-6 font-mono text-2xl font-medium lg:text-4xl">
+    <span className="mb-4 lg:mb-6 font-mono text-3xl font-medium lg:text-4xl">
       <TypewriterComponent
         options={{
           strings: [
