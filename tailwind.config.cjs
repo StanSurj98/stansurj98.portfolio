@@ -7,7 +7,7 @@ module.exports = {
       'rich-black': '#0F1922',
       'lightest-darksteel': '#3a5f80',
       'light-darksteel': '#2f4d68',
-      'darksteel': '#1F3345',
+      'darksteel': '#223844',
       'sky-blue': '#84CEEB',
       'capri': '#5ab9ea',
       'azure': '#007FFF',
