@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import NavbarTextButtons from "./widgets/NavbarTextButtons";
 import Logo from "../assets/ss_logo_nobg2.png";
 
@@ -21,7 +19,7 @@ const SmallNavbar = () => {
       <div className="flex items-center">
         {navChildren}
         <div className="ml-4 flex">
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             className="ml-2 text-2xl cursor-pointer duration-200 ease-out hover:scale-110 hover:ease-out hover:text-azure"
             icon={faGithub}
             // size={"xl"}
@@ -30,7 +28,7 @@ const SmallNavbar = () => {
             className="ml-2 text-2xl cursor-pointer duration-200 ease-out hover:scale-110 hover:ease-out hover:text-azure"
             icon={faLinkedin}
             // size={"xl"}
-          />
+          /> */}
         </div>
       </div>
     </nav>

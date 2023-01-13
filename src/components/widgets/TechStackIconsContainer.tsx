@@ -1,36 +1,33 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faReact,
-  faJsSquare,
-  faHtml5,
-  faCss3Alt,
-  faNode,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
+  FaReact,
+  FaJsSquare,
+  FaHtml5,
+  FaCss3Alt,
+  FaNode,
+  FaPython,
+} from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 const TechStackIconsContainer = () => {
   const techIconList = [
-    faReact,
-    faJsSquare,
-    faHtml5,
-    faCss3Alt,
-    faNode,
-    faPython,
+    <FaReact />,
+    <FaJsSquare />,
+    <FaHtml5 />,
+    <FaCss3Alt />,
+    <FaNode />,
+    <FaPython />,
   ];
   const techIconItems = techIconList.map((icon, index) => {
     return (
-      <FontAwesomeIcon
-        key={index}
-        className="m-2 cursor-pointer text-4xl text-white duration-200 ease-out hover:scale-110 hover:text-azure hover:ease-out"
-        icon={icon}
-        fixedWidth
-      />
+      icon
     );
   });
 
   return (
     <div className="max-w-4/5 mt-4 flex flex-wrap items-center justify-center">
-      {techIconItems}
+      <IconContext.Provider value={{className: "text-white text-3xl"}}>
+        {techIconItems}
+      </IconContext.Provider>
     </div>
   );
 };
