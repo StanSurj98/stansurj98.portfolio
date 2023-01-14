@@ -9,7 +9,6 @@ function App() {
       {/* <Navbar></Navbar> */}
       <LandingPage />
       <WorkSection />
-      <div className="h-screen w-screen bg-pink-200"></div>
     </div>
   );
 }
