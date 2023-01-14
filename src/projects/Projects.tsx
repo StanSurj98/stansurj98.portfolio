@@ -7,7 +7,7 @@ export const projectsList = [
   },
   {
     name: "What's Brewin'",
-    description: "Full-stack application on React, Express and PSQL helping beer lovers travel anywhere and view on a map, all the local breweries/brew-pubs in the area.\nFront-end: React, TailwindCSS, Framer-motion, Mapbox-GL\nBack-end: NodeJS, Express, PostgresQL, Axios, React-router-dom, Multer",
+    description: "Full-stack application on React, Express and PSQL helping beer lovers travel anywhere and view on a map, all the local breweries/brew-pubs in the area.",
     url: "https://github.com/StanSurj98/whats.brewin",
     imageURL: "../assets/whats_brewin_collage.png"
   },
@@ -19,7 +19,7 @@ export const projectsList = [
   },
   {
     name: "Interview Scheduler",
-    description: "A full stack application that allow users to create, edit and delete interview appointments.\n\nFront-end: React, SCSS\nBack-end: NodeJS, Express, PostgresQL, Axios\nTesting: Jest, Cypress, Storybook",
+    description: "A full stack application that allow users to create, edit and delete interview appointments.",
     url:"https://github.com/StanSurj98/interview-scheduler",
     imageURL:"../assets/interview_scheduler_homepage.png"
   },
@@ -31,13 +31,13 @@ export const projectsList = [
   // },
   {
     name: "Jungle",
-    description: "A full stack e-commerce project with Ruby on Rails.\nFront-end: JS, HTML, CSS, Bootstrap\nBack-end: Ruby, Rails, PostgresQL, Stripe, BCrypt\nTesting: Rspec",
+    description: "A full stack e-commerce project with Ruby on Rails.",
     url: "https://github.com/StanSurj98/Jungle",
     imageURL: "../assets/jungle_collage.png"
   },
   {
     name: "Tweeter",
-    description: "A Twitter clone to learn front-end web development. My first Single Page Application exercise during bootcamp.\nFront-end: JS, HTML, CSS, jQuery\nBack-end: Node, Express",
+    description: "A Twitter clone to learn front-end web development. Our first Single Page Application exercise during bootcamp.",
     url: "https://github.com/StanSurj98/Tweeter",
     imageURL: "../assets/tweeter_collage.png"
   },
