@@ -3,9 +3,9 @@ import IntroCard from "./IntroCard";
 
 const LandingPage = () => {
   return (
-    <div className="flex h-screen w-screen flex-col justify-center bg-gradient-to-br from-azure to-cobalt lg:items-center">
+    <section className="relative flex h-screen w-screen flex-col justify-center bg-gradient-to-br from-azure to-cobalt lg:items-center">
       <IntroCard></IntroCard>
-    </div>
+    </section>
   );
 };
 
