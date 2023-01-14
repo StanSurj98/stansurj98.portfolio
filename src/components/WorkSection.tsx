@@ -1,12 +1,25 @@
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { Splide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import bgImage from "../assets/interview_scheduler_homepage.png";
-import pic from "../assets/ProfilePic.jpg";
 import ProjectItems from "./ProjectItems";
+import { projectsList } from "../projects/Projects";
 
 const WorkSection = () => {
+  const projectItems = projectsList.map(
+    ({ name, description, url, imageURL }, index) => {
+      return (
+        <ProjectItems
+          key={index}
+          name={name}
+          description={description}
+          url={url}
+          imageURL={imageURL}
+        />
+      );
+    }
+  );
   return (
-    <section className="relative mt-20 w-full bg-white pt-16 lg:mt-0 xl:min-h-screen">
+    // this mt-72 is a hacky fix for mobile, not sure why it's overlapping the landing page intro card...
+    <section className="relative mt-72 w-full pt-16 lg:mt-0">
       <div className="mx-auto w-10/12 text-center 2xl:w-[80%]">
         <h2 className="fontSize-smallHeader mb-4 font-robotoCondensed uppercase text-azure ">
           Work
@@ -17,10 +30,7 @@ const WorkSection = () => {
       </div>
       <div>
         <Splide hasTrack={false} className="max-w-full">
-          <SplideTrack>
-            <ProjectItems />
-            <ProjectItems />
-          </SplideTrack>
+          <SplideTrack>{projectItems}</SplideTrack>
         </Splide>
       </div>
     </section>
