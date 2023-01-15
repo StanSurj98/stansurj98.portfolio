@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const SmallNavbar = () => {
   const navCategories = ["Resumé", "Work", "Contact"];
   const navChildren = navCategories.map((title, index) => {
-    return <NavbarTextButtons title={title} key={index} />;
+    return <NavbarTextButtons title={title} key={index} target={title} />;
   });
 
   return (
