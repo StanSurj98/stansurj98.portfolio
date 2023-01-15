@@ -1,16 +1,16 @@
 type Props = {
   children: string;
-  onClick: any;
+  link: string;
 };
 
-const ButtonMain = ({ children, onClick }: Props) => {
+const ButtonMain = ({ children, link }: Props) => {
   return (
-    <button
-      className="h-10 w-36 cursor-pointer rounded-sm bg-azure font-robotoCondensed text-xl font-light text-white drop-shadow-custom-small duration-200 ease-out hover:scale-110 hover:ease-out"
-      onClick={onClick}
+    <a
+      href={link}
+      className="flex h-10 w-36 cursor-pointer items-center justify-center rounded-sm bg-azure font-robotoCondensed text-xl font-light text-white drop-shadow-custom-small duration-200 ease-out hover:scale-110 hover:ease-out"
     >
       {children}
-    </button>
+    </a>
   );
 };
 
