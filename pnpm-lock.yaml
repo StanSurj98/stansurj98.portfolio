@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@cloudinary/react': ^1.8.1
+  '@cloudinary/url-gen': ^1.8.7
   '@splidejs/react-splide': ^0.7.12
   '@tailwindcss/typography': ^0.5.9
   '@types/react': ^18.0.26
@@ -19,6 +21,8 @@ specifiers:
   vite: ^4.0.0
 
 dependencies:
+  '@cloudinary/react': 1.8.1_react@18.2.0
+  '@cloudinary/url-gen': 1.8.7
   '@splidejs/react-splide': 0.7.12
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -266,6 +270,39 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
     dev: true
+
+  /@cloudinary/html/1.8.1:
+    resolution: {integrity: sha512-oC6wp7R1nAMR4tqLCaGaxWcgpokXPvOTufNjavQmak+0q86nWmgF42pOz5NOt6kbd8CMdO+ZicliAraV1AXXpg==}
+    dependencies:
+      '@types/lodash.clonedeep': 4.5.7
+      '@types/lodash.debounce': 4.0.7
+      '@types/node': 14.18.36
+      lodash.clonedeep: 4.5.0
+      lodash.debounce: 4.0.8
+      typescript: 4.9.4
+    dev: false
+
+  /@cloudinary/react/1.8.1_react@18.2.0:
+    resolution: {integrity: sha512-2lbDfSWT6lY63jpH8NIK2uRrY214S6npNXVV+UknwLbzX6QFk4jmKdPdDwHfbKOV2SMKnKzrg9z+uYuf3xUYnQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.3.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@cloudinary/html': 1.8.1
+      react: 18.2.0
+    dev: false
+
+  /@cloudinary/transformation-builder-sdk/1.2.0:
+    resolution: {integrity: sha512-QhCZf8Lad90za9cEXMDZtF4G9Bdan6X0RlrtZBx3sAmuAYQz0yIwgcV8Ov63lef4tGwIdpGGXPjeopondw9P4A==}
+    dependencies:
+      '@cloudinary/url-gen': 1.8.7
+    dev: false
+
+  /@cloudinary/url-gen/1.8.7:
+    resolution: {integrity: sha512-07Hqy3weuuRm8ZCwn/HejrfiC8MiC/dK13IWm01FslhWek55jUTsKqR5xMwYQPX8+MWpLXd/EI/FiwqWaB5dDA==}
+    dependencies:
+      '@cloudinary/transformation-builder-sdk': 1.2.0
+    dev: false
 
   /@esbuild/android-arm/0.16.16:
     resolution: {integrity: sha512-BUuWMlt4WSXod1HSl7aGK8fJOsi+Tab/M0IDK1V1/GstzoOpqc/v3DqmN8MkuapPKQ9Br1WtLAN4uEgWR8x64A==}
@@ -545,6 +582,26 @@ packages:
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.2.4_postcss@8.4.21
     dev: true
+
+  /@types/lodash.clonedeep/4.5.7:
+    resolution: {integrity: sha512-ccNqkPptFIXrpVqUECi60/DFxjNKsfoQxSQsgcBJCX/fuX1wgyQieojkcWH/KpE3xzLoWN/2k+ZeGqIN3paSvw==}
+    dependencies:
+      '@types/lodash': 4.14.191
+    dev: false
+
+  /@types/lodash.debounce/4.0.7:
+    resolution: {integrity: sha512-X1T4wMZ+gT000M2/91SYj0d/7JfeNZ9PeeOldSNoE/lunLeQXKvkmIumI29IaKMotU/ln/McOIvgzZcQ/3TrSA==}
+    dependencies:
+      '@types/lodash': 4.14.191
+    dev: false
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+    dev: false
+
+  /@types/node/14.18.36:
+    resolution: {integrity: sha512-FXKWbsJ6a1hIrRxv+FoukuHnGTgEzKYGi7kilfMae96AL9UNkPFNWJEEYWzdRI9ooIkbr4AKldyuSTLql06vLQ==}
+    dev: false
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -930,6 +987,14 @@ packages:
     resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
     dev: true
 
+  /lodash.clonedeep/4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+    dev: false
+
+  /lodash.debounce/4.0.8:
+    resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
+    dev: false
+
   /lodash.isplainobject/4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
     dev: true
@@ -1300,7 +1365,6 @@ packages:
     resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /typewriter-effect/2.19.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-rhUX1ukmAXNFWUnMFx8CDU1uLWJQ7pRYzDU7WfHJRq43i6SmWSP9vFiUsOGfXINodUAgZiJ5xnzwLciHxZDGDg==}
