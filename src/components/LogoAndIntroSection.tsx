@@ -3,7 +3,7 @@ import AboutBlurb from "./widgets/AboutBlurb";
 import ButtonMain from "./widgets/ButtonMain";
 import IntroCardTypewriterHeader from "./widgets/IntroCardTypewriterHeader";
 import Nameplate from "./widgets/Nameplate";
-import '../index.css'
+import "../index.css";
 
 const LogoAndIntroSection = () => {
   return (
@@ -17,13 +17,7 @@ const LogoAndIntroSection = () => {
       <IntroCardTypewriterHeader />
       <AboutBlurb />
       <div className="flex w-full items-center justify-center 2xl:mt-20">
-        <ButtonMain
-          onClick={() => {
-            console.log("clicked");
-          }}
-        >
-          View My Work
-        </ButtonMain>
+        <ButtonMain link="#work">View My Work</ButtonMain>
       </div>
     </div>
   );

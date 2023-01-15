@@ -6,30 +6,47 @@ import {
   FaNode,
   FaPython,
 } from "react-icons/fa";
-import { SiPostgresql, SiExpress, SiTailwindcss, SiDocker } from "react-icons/si";
+import {
+  SiPostgresql,
+  SiExpress,
+  SiTailwindcss,
+  SiDocker,
+  SiTypescript,
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { IconContext } from "react-icons";
 
 const TechStackIconsContainer = () => {
   const techIconList = [
-    <FaReact />,
-    <FaJsSquare />,
-    <FaHtml5 />,
-    <FaCss3Alt />,
-    <FaNode />,
-    <SiExpress />,
-    <SiTailwindcss />,
-    <SiPostgresql />,
-    <TbBrandNextjs />,
-    <FaPython />,
-    <SiDocker />,
+    { icon: <FaReact />, link: "https://reactjs.org/" },
+    { icon: <FaJsSquare />, link: "https://www.javascript.com/" },
+    { icon: <SiTypescript />, link: "https://www.typescriptlang.org/" },
+    {
+      icon: <FaHtml5 />,
+      link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML",
+    },
+    {
+      icon: <FaCss3Alt />,
+      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    { icon: <FaNode />, link: "https://nodejs.org/en/" },
+    { icon: <SiExpress />, link: "http://expressjs.com" },
+    { icon: <SiTailwindcss />, link: "https://tailwindcss.com/" },
+    { icon: <SiPostgresql />, link: "https://www.postgresql.org" },
+    { icon: <TbBrandNextjs />, link: "https://nextjs.org/" },
+    { icon: <FaPython />, link: "https://www.python.org" },
+    { icon: <SiDocker />, link: "https://www.docker.com/" },
   ];
-  const techIconItems = techIconList.map((icon) => {
-    return icon;
+  const techIconItems = techIconList.map(({ icon, link }) => {
+    return (
+      <a href={link} target="_blank">
+        {icon}
+      </a>
+    );
   });
 
   return (
-    <div className="2xl:w-2/4 mt-4 flex flex-wrap items-center justify-center">
+    <div className="mt-4 flex flex-wrap items-center justify-center 2xl:w-2/4">
       <IconContext.Provider
         value={{
           className:
