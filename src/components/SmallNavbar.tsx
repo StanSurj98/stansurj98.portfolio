@@ -10,7 +10,7 @@ const SmallNavbar = () => {
       link: "https://resume.creddle.io/resume/fckk968fx6h",
     },
     { title: "Work", link: "#work" },
-    { title: "Contact", link: "#contact" },
+    // { title: "Contact", link: "#contact" },
   ];
 
   const navChildren = navCategories.map(({ title, link }, index) => {
