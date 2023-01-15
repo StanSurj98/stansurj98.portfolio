@@ -31,7 +31,7 @@ export const projectsList = [
   // },
   {
     name: "Jungle",
-    description: "A full stack e-commerce project with Ruby on Rails.",
+    description: "A full stack e-commerce project with Ruby on Rails with Stripe integration.",
     url: "https://github.com/StanSurj98/Jungle",
     imageURL: "jungle_collage.png"
   },
