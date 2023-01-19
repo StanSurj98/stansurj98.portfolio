@@ -1,7 +1,7 @@
-import LandingPage from "./components/LandingPage";
-import ProjectItems from "./components/ProjectItems";
-import WorkSection from "./components/WorkSection";
 // import Navbar from "./components/Navbar"
+import LandingPage from "./components/LandingPage";
+import WorkSection from "./components/WorkSection";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       {/* <Navbar></Navbar> */}
       <LandingPage />
       <WorkSection />
+      {/* <ContactSection /> */}
     </div>
   );
 }
