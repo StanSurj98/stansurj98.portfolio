@@ -7,19 +7,19 @@ import "../index.css";
 
 const LogoAndIntroSection = () => {
   return (
-    <div className="min-h-3/5 relative flex h-full flex-col items-start bg-white px-8 pb-5 lg:h-full lg:w-1/2 lg:justify-start lg:rounded-l-md lg:px-16">
+    <section className="flex h-max w-full flex-col items-start bg-white px-10 py-8 lg:h-full lg:w-1/2 lg:justify-start lg:rounded-l-md lg:px-16 lg:py-10">
       {/* Only visible on medium+ screens */}
       <SmallNavbar />
       <Nameplate />
-      <h1 className="fontSize-smallHeader my-2 text-azure lg:mb-4 2xl:mb-6">
+      <h1 className="fontSize-smallHeader text-azure my-4">
         ABOUT
       </h1>
       <IntroCardTypewriterHeader />
       <AboutBlurb />
-      <div className="flex w-full items-center justify-center 2xl:mt-20">
+      <div className="flex w-full items-center justify-center 2xl:mt-12">
         <ButtonMain link="#work">View My Work</ButtonMain>
       </div>
-    </div>
+    </section>
   );
 };
 
