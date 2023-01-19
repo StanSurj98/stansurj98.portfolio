@@ -3,7 +3,7 @@ type Props = {
   tagline: string;
 }
 
-const WorkHeader = ({header, tagline}: Props) => {
+const SectionHeader = ({header, tagline}: Props) => {
   return (
     <div className="flex h-40 w-screen flex-col items-center justify-center">
       <h1 className="fontSize-smallHeader mb-4 font-robotoCondensed uppercase text-azure ">
@@ -16,4 +16,4 @@ const WorkHeader = ({header, tagline}: Props) => {
   );
 };
 
-export default WorkHeader;
+export default SectionHeader;
