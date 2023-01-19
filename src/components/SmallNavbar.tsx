@@ -18,7 +18,7 @@ const SmallNavbar = () => {
   });
 
   return (
-    <nav className="hidden lg:flex lg:h-16 lg:w-full lg:items-center lg:justify-between lg:py-14 2xl:py-16">
+    <nav className="hidden lg:flex lg:h-16 lg:w-full lg:items-center lg:justify-between">
       <a href="#landingPage" className="flex items-center">
         <img
           src={Logo}
@@ -35,8 +35,15 @@ const SmallNavbar = () => {
                 "ml-2 text-2xl cursor-pointer duration-200 ease-out hover:scale-110 hover:ease-out hover:text-azure",
             }}
           >
-            <a href="https://github.com/StanSurj98" target={"_blank"}><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/stanley-surjanto/" target={"_blank"}><FaLinkedin /></a>
+            <a href="https://github.com/StanSurj98" target={"_blank"}>
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/stanley-surjanto/"
+              target={"_blank"}
+            >
+              <FaLinkedin />
+            </a>
           </IconContext.Provider>
         </div>
       </div>
