@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <section
       id="landingPage"
-      className="relative flex h-max w-screen flex-col justify-center lg:bg-gradient-to-br from-azure to-cobalt lg:h-screen lg:items-center"
+      className="relative mt-16 lg:mt-0 flex h-max w-screen flex-col justify-center lg:bg-gradient-to-br from-azure to-cobalt lg:h-screen lg:items-center"
     >
       <IntroCard></IntroCard>
     </section>
@@ -14,4 +14,3 @@ const LandingPage = () => {
 
 export default LandingPage;
 
-// bg-gradient-to-br from-capri to-cobalt
