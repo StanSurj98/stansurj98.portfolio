@@ -24,17 +24,17 @@ const Navbar = () => {
   return (
     <>
       {/* opaque underlayer to navbar */}
-      <div className="bg-gradient-to-br from-darksteel to-rich-black opacity-90 fixed top-0 z-40 h-16 w-full"></div>
+      {/* <div className="bg-gradient-to-br from-darksteel to-rich-black opacity-90 fixed top-0 z-40 h-16 w-full"></div> */}
 
       <nav className="fixed top-0 z-50 flex h-16 w-full items-center justify-between bg-white lg:bg-transparent">
         {/* desktop navbar visible on large screens only */}
-        <div className="mx-auto hidden w-[90%] items-center justify-between lg:flex">
+        {/* <div className="mx-auto hidden w-[90%] items-center justify-between lg:flex">
           <Logo alt={true} />
           <div className="hidden items-center justify-center gap-8 text-white lg:flex">
             {navChildren}
             <SocialsIcons />
           </div>
-        </div>
+        </div> */}
 
         {/* mobile navbar visible on small screens only */}
         <div className="mx-auto flex w-[90%] items-center justify-between lg:hidden">
