@@ -13,7 +13,7 @@ const NavbarTextButtons = ({ title, link }: Props) => {
     <a
       href={link}
       target={target}
-      className="ml-6 cursor-pointer font-robotoCondensed text-xl font-light text-rich-black duration-200 ease-out hover:scale-105 hover:text-azure hover:ease-in-out"
+      className="cursor-pointer font-robotoCondensed text-xl font-light text-rich-black duration-200 ease-out hover:scale-105 hover:text-azure hover:ease-in-out"
     >
       {title}
     </a>
