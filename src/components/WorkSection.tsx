@@ -1,7 +1,7 @@
 import { Splide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import ProjectItems from "./ProjectItems";
-import { projectsList } from "../projects/Projects";
+import { projectsList } from "../Projects";
 
 const WorkSection = () => {
   const projectItems = projectsList.map(
