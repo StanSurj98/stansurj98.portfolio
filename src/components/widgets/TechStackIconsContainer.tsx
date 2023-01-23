@@ -39,7 +39,7 @@ const TechStackIconsContainer = () => {
   ];
   const techIconItems = techIconList.map(({ icon, link }) => {
     return (
-      <a href={link} target="_blank">
+      <a key={link} href={link} target="_blank">
         {icon}
       </a>
     );
