@@ -1,5 +1,6 @@
 import React from "react";
 
+// If ever need to add menu items to all navbars, add to this array here
 export const navCategories = [
   {
     title: "Resumé",
