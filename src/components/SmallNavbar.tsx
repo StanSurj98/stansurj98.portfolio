@@ -1,21 +1,17 @@
 import Logo from "./widgets/Logo";
 import NavbarTextButtons from "./widgets/NavbarTextButtons";
-
 import SocialsIcons from "./widgets/SocialsIcons";
+import { NavMenuContext } from "./Contexts";
+import { useContext } from "react";
 
 const SmallNavbar = () => {
-  const navCategories = [
-    {
-      title: "Resumé",
-      link: "https://resume.creddle.io/resume/fckk968fx6h",
-    },
-    { title: "Work", link: "#work" },
-    { title: "Contact", link: "#contact" },
-  ];
+  const navMenuContext = useContext(NavMenuContext);
 
-  const navChildren = navCategories.map(({ title, link }, index) => {
-    return <NavbarTextButtons title={title} key={index} link={link} />;
-  });
+  const navChildren: JSX.Element[] = navMenuContext.map(
+    ({ title, link }, index) => {
+      return <NavbarTextButtons title={title} key={index} link={link} />;
+    }
+  );
 
   return (
     <nav className="hidden lg:flex lg:h-16 lg:w-full lg:items-center lg:justify-between">

@@ -1,23 +1,20 @@
 import { SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { AdvancedImage } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
+import { Cloudinary, CloudinaryImage } from "@cloudinary/url-gen";
+import { ProjectInterface } from "../Projects";
 
-type Props = {
-  url: string;
-  imageURL: string;
-  name: string;
-  description: string;
-};
 
-const ProjectItems = ({ name, description, imageURL, url }: Props) => {
+// -- Component --
+const ProjectItems = ({ name, description, imageURL, url }: ProjectInterface) => {
+  
   // Cloudinary Setup for Project Images from CMS
-  const cld = new Cloudinary({
+  const cld: Cloudinary = new Cloudinary({
     cloud: {
       cloudName: "dho5v3zlt",
     },
   });
-  const projectImage = cld.image(`portfolio-site/${imageURL}`);
+  const projectImage:CloudinaryImage = cld.image(`portfolio-site/${imageURL}`);
 
   return (
     <SplideSlide className="group relative h-screen w-screen overflow-hidden">
