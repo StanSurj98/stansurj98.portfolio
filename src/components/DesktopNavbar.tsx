@@ -11,7 +11,7 @@ import { motion, useScroll, useAnimationControls } from "framer-motion";
 const DesktopNavbar = () => {
   const navMenuContext = useContext(NavMenuContext);
 
-  const navChildren = navMenuContext.map(({ title, link }, index) => {
+  const navChildren: JSX.Element[] = navMenuContext.map(({ title, link }, index) => {
     return <NavbarTextButtons title={title} key={index} link={link} />;
   });
 
