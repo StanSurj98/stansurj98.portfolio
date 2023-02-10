@@ -1,11 +1,13 @@
 import { Splide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import ProjectItems from "./ProjectItems";
-import { projectsList } from "../Projects";
+import { projectsList, ProjectInterface } from "../Projects";
 
+// -- Component --
 const WorkSection = () => {
-  const projectItems = projectsList.map(
-    ({ name, description, url, imageURL }, index) => {
+  // -- Helpers --
+  const projectItems: JSX.Element[] = projectsList.map(
+    ({ name, description, url, imageURL }: ProjectInterface, index: number) => {
       return (
         <ProjectItems
           key={index}
@@ -17,11 +19,12 @@ const WorkSection = () => {
       );
     }
   );
+
   return (
-    <section id="work" className="w-screen h-screen">
-        <Splide hasTrack={false} className="max-w-full overflow-hidden">
-          <SplideTrack>{projectItems}</SplideTrack>
-        </Splide>
+    <section id="work" className="h-screen w-screen">
+      <Splide hasTrack={false} className="max-w-full overflow-hidden">
+        <SplideTrack>{projectItems}</SplideTrack>
+      </Splide>
     </section>
   );
 };

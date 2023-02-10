@@ -5,11 +5,13 @@ import { NavMenuContext } from "./Contexts";
 import { useContext } from "react";
 
 const SmallNavbar = () => {
-  const navMenuContext = useContext(NavMenuContext)
+  const navMenuContext = useContext(NavMenuContext);
 
-  const navChildren = navMenuContext.map(({ title, link }, index) => {
-    return <NavbarTextButtons title={title} key={index} link={link} />;
-  });
+  const navChildren: JSX.Element[] = navMenuContext.map(
+    ({ title, link }, index) => {
+      return <NavbarTextButtons title={title} key={index} link={link} />;
+    }
+  );
 
   return (
     <nav className="hidden lg:flex lg:h-16 lg:w-full lg:items-center lg:justify-between">
