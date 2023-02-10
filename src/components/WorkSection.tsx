@@ -4,7 +4,7 @@ import ProjectItems from "./ProjectItems";
 import { projectsList, ProjectInterface } from "../Projects";
 
 // -- Component --
-const WorkSection: React.FC = () => {
+const WorkSection = () => {
   // -- Helpers --
   const projectItems: JSX.Element[] = projectsList.map(
     ({ name, description, url, imageURL }: ProjectInterface, index: number) => {
