@@ -16,7 +16,10 @@ import {
 import { TbBrandNextjs } from "react-icons/tb";
 import { IconContext } from "react-icons";
 
+// -- Component --
 const TechStackIconsContainer = () => {
+  
+  // -- Data --
   const techIconList = [
     { icon: <FaReact />, link: "https://reactjs.org/" },
     { icon: <FaJsSquare />, link: "https://www.javascript.com/" },
@@ -37,7 +40,9 @@ const TechStackIconsContainer = () => {
     { icon: <FaPython />, link: "https://www.python.org" },
     { icon: <SiDocker />, link: "https://www.docker.com/" },
   ];
-  const techIconItems = techIconList.map(({ icon, link }) => {
+
+  // -- Helpers --
+  const techIconItems:JSX.Element[] = techIconList.map(({ icon, link }) => {
     return (
       <a key={link} href={link} target="_blank">
         {icon}
