@@ -6,7 +6,7 @@ import { ProjectInterface } from "../Projects";
 
 
 // -- Component --
-const ProjectItems = ({ name, description, imageURL, url }: ProjectInterface) => {
+const ProjectItems: React.FC<ProjectInterface> = ({ name, description, imageURL, url }) => {
   
   // Cloudinary Setup for Project Images from CMS
   const cld: Cloudinary = new Cloudinary({
